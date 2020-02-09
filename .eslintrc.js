@@ -17,4 +17,10 @@ module.exports = {
       processor: 'svelte3/svelte3',
     },
   ],
+  settings: {
+    // ignore scss
+    'svelte3/ignore-styles': attributes =>
+      (attributes.lang && attributes.lang === 'scss') ||
+      (attributes.type && attributes.type === 'text/scss'),
+  },
 };
