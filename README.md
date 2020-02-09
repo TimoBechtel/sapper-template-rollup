@@ -1,23 +1,27 @@
-# sapper-template
+# sapper-template-rollup (extended)
 
-The default [Sapper](https://github.com/sveltejs/sapper) template, available for Rollup and webpack.
+Yet another fork of the default [Sapper](https://github.com/sveltejs/sapper) template. ✨  
+Added postcss, eslint, sass processing, optional [tailwindcss](https://tailwindcss.com/) and more.
 
 ## Getting started
 
 ### Using `degit`
 
-[`degit`](https://github.com/Rich-Harris/degit) is a scaffolding tool that lets you create a directory from a branch in a repository. Use either the `rollup` or `webpack` branch in `sapper-template`:
+[`degit`](https://github.com/Rich-Harris/degit) is a scaffolding tool that lets you create a directory from a branch in a repository. 
+Just use the default, or any of the option branches `option/tailwindcss` or `option/blank`:
 
 ```bash
-# for Rollup
-npx degit "sveltejs/sapper-template#rollup" my-app
-# for webpack
-npx degit "sveltejs/sapper-template#webpack" my-app
+# default
+npx degit "TimoBechtel/sapper-template-rollup" my-app
+# template with tailwindcss
+npx degit "TimoBechtel/sapper-template-rollup#option/tailwindcss" my-app
+# blank template
+npx degit "TimoBechtel/sapper-template-rollup#option/blank" my-app
 ```
 
 ### Using GitHub templates
 
-Alternatively, you can use GitHub's template feature with the [sapper-template-rollup](https://github.com/sveltejs/sapper-template-rollup) or [sapper-template-webpack](https://github.com/sveltejs/sapper-template-webpack) repositories.
+Alternatively, you can use GitHub's template feature.
 
 ### Running the project
 
