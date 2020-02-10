@@ -1,7 +1,46 @@
-# sapper-template-rollup (extended)
+# Sapper Rollup Template (extended)
 
-Yet another fork of the default [Sapper](https://github.com/sveltejs/sapper) template. ✨  
+Yet another fork of the default [Sapper](https://github.com/sveltejs/sapper) template for rollup. ✨  
 Added postcss, eslint, sass processing, optional [tailwindcss](https://tailwindcss.com/) and more.
+
+## Additions
+
+### `master`
+- [eslint](https://eslint.org/)
+  - including config for svelte, babel and cypress
+  - you probably want to install the [eslint extension for vscode](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint)
+- [prettier](https://prettier.io/)
+  - again you probably want to install the [vscode prettier extension](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode) for this
+  - uncomment `// svelteSortOrder: 'markup-scripts-styles'` in `.prettierrc.js` if you like Vue.js sorting order (my preferred choice)
+- preprocessing for sass/scss   
+  Use sass like this:
+  ```html
+  <style lang="scss">
+    $color: red;
+    div {
+      color: $color;
+    }
+  </style>
+  ```
+  checkout https://github.com/kaisermann/svelte-preprocess for more info about `svelte-preprocess`
+- [postcss](https://github.com/postcss/postcss)  
+  Add your postcss plugins to `postcss.config.js`.
+- [postcss-import](https://github.com/postcss/postcss-import) is enabled by default. It allows you to use `@import` to import any css/scss including from `node_modules`
+  ```html
+  <style>
+    @import 'SOME_CSS_MODULE';
+  </style>
+  ```
+- [autoprefixer](https://github.com/postcss/autoprefixer) - postcss plugin to automagically add vendor prefixes
+- setting NODE_ENV in `build` and `export` scripts to `production` (using [cross-env](https://github.com/kentcdodds/cross-env)) 
+
+### `option/tailwindcss`
+- [tailwindcss](https://github.com/tailwindcss/tailwindcss)  
+  Including `purgecss` to delete unused classes.
+  I recommend using the [Tailwind CSS IntelliSense](https://marketplace.visualstudio.com/items?itemName=bradlc.vscode-tailwindcss) extension for VSCode to get autocompletion for tailwind classes.
+
+### `option/blank`
+- default (`master`) without demo pages
 
 ## Getting started
 
