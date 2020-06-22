@@ -5,7 +5,7 @@ Added postcss, eslint, sass processing, optional [tailwindcss](https://tailwindc
 
 ## Additions
 
-### `master`
+### `main`
 - [eslint](https://eslint.org/)
   - including config for svelte, babel and cypress
   - you probably want to install the [eslint extension for vscode](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint)
@@ -40,7 +40,7 @@ Added postcss, eslint, sass processing, optional [tailwindcss](https://tailwindc
   I recommend using the [Tailwind CSS IntelliSense](https://marketplace.visualstudio.com/items?itemName=bradlc.vscode-tailwindcss) extension for VSCode to get autocompletion for tailwind classes.
 
 ### `option/blank`
-- default (`master`) without demo pages
+- default (`main`) without demo pages
 
 ## Getting started
 
@@ -51,7 +51,7 @@ Just use the default, or any of the option branches `option/tailwindcss` or `opt
 
 ```bash
 # default
-npx degit "TimoBechtel/sapper-template-rollup" my-app
+npx degit "TimoBechtel/sapper-template-rollup#main" my-app
 # template with tailwindcss
 npx degit "TimoBechtel/sapper-template-rollup#option/tailwindcss" my-app
 # blank template
