@@ -1,3 +1,5 @@
+# ⚠ This template is not getting updated in the near future. Please use the [official template](https://github.com/sveltejs/sapper-template) instead.
+
 # Sapper Rollup Template (extended)
 
 Yet another fork of the default [Sapper](https://github.com/sveltejs/sapper) template for rollup. ✨  
